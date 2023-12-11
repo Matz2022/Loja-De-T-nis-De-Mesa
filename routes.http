@@ -1,0 +1,30 @@
+POST http://localhost:3333/raquetes
+Content-Type: application/json
+
+{
+    "tipo": "Raquete 01",
+    "marca": "Marca 01",
+    "quantidade": 150
+}
+
+###
+
+GET http://localhost:3333/raquetes
+
+###
+
+GET http://localhost:3333/raquetes?search=CARBON
+###
+
+PUT http://localhost:3333/raquetes/ba842e49-e4c7-4810-8da4-da58871ad58a
+Content-Type: application/json
+
+{
+    "tipo": "classica CARBON",
+    "marca": "Dhs 01",
+    "quantidade": 120
+}
+
+###
+
+DELETE  http://localhost:3333/raquetes/ba842e49-e4c7-4810-8da4-da58871ad58a
